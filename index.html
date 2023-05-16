@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QianKun Demo</title>
+</head>
+
+<body>
+  <div class="mainapp">
+    <header class="mainapp-header">
+      <h1>QianKun</h1>
+    </header>
+    <div class="mainapp-main">
+      <ul class="mainapp-sidemenu">
+        <li onclick="push('/react')">React-App</li>
+        <li onclick="push('/angular')">Angular-App</li>
+      </ul>
+      <main id="subapp-container"></main>
+    </div>
+  </div>
+
+  <script>
+    function push(subapp) { history.pushState(null, subapp, subapp) }
+  </script>
+</body>
+
+</html>

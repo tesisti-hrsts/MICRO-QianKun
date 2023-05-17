@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>qiankun multiple demo</title>
-  <style>
-    body {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-  </style>
+  <title>Qiankun multiple Demo</title>
 </head>
+
 <body>
-<button id="unmount">unmount</button>
-<button id="mount">mount</button>
-
-
-<div id="react15">react loading...</div>
-<div id="vue">vue loading...</div>
-
+  <div className='containerApp' style="display: flex;">
+    <div id="react-app" className='microApp' style="flex: 1;"> React-App loading... </div>
+    <div id="angular-app" className='microApp' style="flex: 1;"> Angular-App loading... </div>
+  </div>
 </body>
+
 </html>
